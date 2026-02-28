@@ -38,12 +38,29 @@ namespace COMP003A.Assignment7
 
 				if (choice == 1)
 				{
-					//
+					Console.WriteLine();
+					Console.WriteLine("Values:");
+
+					foreach (int score in scores)
+					{
+						Console.WriteLine(score);
+					}
+
+					Console.WriteLine();
 				}
 
 				else if (choice == 2)
 				{
-					//
+					int total = 0;
+
+					for (int i = 0; i < scores.Count; i++)
+					{
+						total += scores[i];
+					}
+
+					Console.WriteLine();
+					Console.WriteLine("Total: " + total);
+					Console.WriteLine();
 				}
 
 				else if (choice == 3)
@@ -66,31 +83,12 @@ namespace COMP003A.Assignment7
 
 				else if (choice == 4)
 				{
+					Console.WriteLine();
 					Console.WriteLine("Program ended.");
 					running = false;
 				}
-
-				Console.WriteLine();
-				Console.WriteLine("Values:");
-
-				foreach (int score in scores)
-				{
-					Console.WriteLine(score);
-				}
-
-				Console.WriteLine();
-
-				int total = 0;
-
-				for (int i = 0; i < scores.Count; i++)
-				{
-					total += scores[i];
-				}
-
-				Console.WriteLine();
-				Console.WriteLine("Total: " + total);
-				Console.WriteLine();
 			}
+			//
 		}
 	}
 }
