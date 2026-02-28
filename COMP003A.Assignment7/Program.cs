@@ -27,13 +27,35 @@ namespace COMP003A.Assignment7
 
 				string choiceInput = Console.ReadLine();
 
-				if (choiceInput == "4")
+				if (choiceInput != "1" && choiceInput != "2" && choiceInput != "3" && choiceInput != "4")
 				{
-					Console.WriteLine("Program ended ");
-					running = false;
+					Console.WriteLine("Invalid menu choice. Please enter a number from 1-4. ");
+					Console.WriteLine();
+					continue;
 				}
 
-				Console.WriteLine();
+				int choice = int.Parse(choiceInput);
+
+				if (choice == 1)
+				{
+					//
+				}
+
+				else if (choice == 2)
+				{
+					//
+				}
+
+				else if (choice == 3)
+				{
+					//
+				}
+
+				else if (choice == 4)
+				{
+					Console.WriteLine("Program ended.");
+					running = false;
+				}
 			}
 		}
 	}
