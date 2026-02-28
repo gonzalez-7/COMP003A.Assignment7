@@ -48,7 +48,20 @@ namespace COMP003A.Assignment7
 
 				else if (choice == 3)
 				{
-					//
+					int total = 0;
+
+					for (int i = 0; i < scores.Count; i++)
+					{
+						total += scores[i];
+					}
+
+					// Bug: I originally used integer division for average which removed decimals, the fix was: Cast total to double before dividing,
+
+					double average = (double)total / scores.Count;
+
+					Console.WriteLine();
+					Console.WriteLine("Average: " + average);
+					Console.WriteLine();
 				}
 
 				else if (choice == 4)
