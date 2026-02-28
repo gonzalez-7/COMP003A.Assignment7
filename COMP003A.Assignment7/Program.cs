@@ -88,7 +88,20 @@ namespace COMP003A.Assignment7
 					running = false;
 				}
 			}
-			//
+			// try-catch block
+
+			try
+			{
+				Console.WriteLine("Enter a new score to add: ");
+				int newScore = int.Parse(Console.ReadLine());
+				scores.Add(newScore);
+				Console.WriteLine("Score added: " + newScore);
+			}
+
+			catch
+			{
+				Console.WriteLine("You did not enter a valid number.");
+			}
 		}
 	}
 }
