@@ -66,6 +66,17 @@ namespace COMP003A.Assignment7
 				}
 
 				Console.WriteLine();
+
+				int total = 0;
+
+				for (int i = 0; i < scores.Count; i++)
+				{
+					total += scores[i];
+				}
+
+				Console.WriteLine();
+				Console.WriteLine("Total: " + total);
+				Console.WriteLine();
 			}
 		}
 	}
