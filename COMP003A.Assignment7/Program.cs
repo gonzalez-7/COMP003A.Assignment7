@@ -56,6 +56,16 @@ namespace COMP003A.Assignment7
 					Console.WriteLine("Program ended.");
 					running = false;
 				}
+
+				Console.WriteLine();
+				Console.WriteLine("Values:");
+
+				foreach (int score in scores)
+				{
+					Console.WriteLine(score);
+				}
+
+				Console.WriteLine();
 			}
 		}
 	}
